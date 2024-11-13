@@ -55,9 +55,9 @@ const HeroContent = () => {
 
         {/* Conditional rendering of contact details */}
         {isContactVisible && (
-          <div className="mt-4 text-gray-200 text-2xl">
-            <p>Email: <a href="nisarmuskan14@gmail.com" className="text-blue-400">nisarmuskan14@gmail.com</a></p>
-            <p>Phone: <a href="03182325757" className="text-blue-400">03182325757</a></p>
+          <div className="mt-4 text-gray-200 text-xl">
+            <p>Email: <a href="nisarmuskan14@gmail.com" className="text-purple-300">nisarmuskan14@gmail.com</a></p>
+            <p>Phone: <a href="03182325757" className="text-purple-300">03182325757</a></p>
           </div>
         )}
       </div>
