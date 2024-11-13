@@ -1,23 +1,26 @@
-import React from 'react'
-import HeroContent from '../sub/HeroContent'
+import React from 'react';
+import HeroContent from '../sub/HeroContent';
 
 const Hero = () => {
   return (
-    <div className='relative flex flex-col h-full w-full'>
-
-        <video 
+    <div className='relative flex flex-col h-screen w-full'>
+      {/* Video Background */}
+      <video
         autoPlay
         muted
         loop
-        className='rotate-100 absolute top-[-340px] left-0 z-[1] w-full h-full object-cover'
-        
-        >
-            <source src='/images/blackhole.webm' type='video/webm'/>
+        playsInline // Ensures that the video plays inline on mobile without showing controls
+        className='absolute top-0 left-0 z-0 w-full h-full object-cover'
+      >
+        <source src='/images/blackhole.webm' type='video/webm' />
+        <source src='/images/blackhole.mp4' type='video/mp4' />
+        <p>Your browser does not support the video format.</p>
+      </video>
 
-        </video>
-        <HeroContent />
+      {/* Hero Content */}
+      <HeroContent />
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
